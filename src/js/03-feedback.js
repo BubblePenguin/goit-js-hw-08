@@ -34,4 +34,6 @@ form.addEventListener(
 
 form.addEventListener('submit', e => {
   e.preventDefault();
+  console.log(localStorage.getItem('feedback-form-state'));
+  localStorage.removeItem('feedback-form-state');
 });
