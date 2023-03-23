@@ -27,7 +27,7 @@ form.addEventListener(
 
     uhm[e.target.name] = e.target.value;
     localStorage.setItem('feedback-form-state', JSON.stringify(uhm));
-    console.log(localStorage.getItem('feedback-form-state'));
+    //console.log(localStorage.getItem('feedback-form-state'));
   }),
   500
 );
