@@ -36,4 +36,6 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   console.log(localStorage.getItem('feedback-form-state'));
   localStorage.removeItem('feedback-form-state');
+  document.querySelector('.feedback-form [name="email"]').value = '';
+  document.querySelector('.feedback-form [name="message"]').value = '';
 });
